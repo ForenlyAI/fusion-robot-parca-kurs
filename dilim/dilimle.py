@@ -14,7 +14,8 @@ subprocess.run(["prusa-slicer", "--export-gcode", *AYAR, "--output", str(out), s
 g = out.read_text(errors="ignore")
 sure = re.search(r"estimated printing time \(normal mode\) = (.+)", g).group(1).strip()
 h = sum(int(v) * {"d": 1440, "h": 60, "m": 1, "s": 1 / 60}[u] for v, u in re.findall(r"(\d+)([dhms])", sure))
-r = dict(surum=subprocess.run(["prusa-slicer", "--help"], capture_output=True, text=True).stdout.splitlines()[0],
+yardim = subprocess.run(["prusa-slicer", "--help"], capture_output=True, text=True); m = re.search(r"PrusaSlicer-[\w.+-]+", yardim.stdout + yardim.stderr)
+r = dict(surum=m.group(0) if m else "?",
          filament_g=float(re.search(r"filament used \[g\] = ([\d.]+)", g).group(1)),
          filament_m=round(float(re.search(r"filament used \[mm\] = ([\d.]+)", g).group(1)) / 1000, 2),
          baski_sure=sure, baski_dk=round(h), katman=g.count(";LAYER_CHANGE"))
