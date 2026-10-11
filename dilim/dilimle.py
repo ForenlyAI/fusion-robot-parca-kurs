@@ -1,9 +1,9 @@
 """STL'i PrusaSlicer komut satırıyla dilimler ve baskı süresi / filament miktarını OLCUMLER.json'a yazar.
-Kullanım:  python dilim/dilimle.py [stl yolu]      (varsayılan: beklenen/g1_cay_tepsisi.stl)
+Kullanım:  python dilim/dilimle.py [stl yolu]      (varsayılan: beklenen/cay_tepsisi.stl)
 Fusion Y-yukarı dışa aktarır; dilimleyici Z-yukarı çalışır → model X ekseninde 90° döndürülür."""
 import json, pathlib, re, subprocess, sys
 B = pathlib.Path(__file__).resolve().parent.parent
-stl = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else B / "beklenen/g1_cay_tepsisi.stl"
+stl = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else B / "beklenen/cay_tepsisi.stl"
 out = B / "dilim/tepsi_pla.gcode"
 AYAR = ["--rotate-x", "90", "--max-print-height", "250", "--nozzle-diameter", "0.4", "--filament-diameter", "1.75",
         "--layer-height", "0.2", "--first-layer-height", "0.2", "--perimeters", "2", "--top-solid-layers", "4",

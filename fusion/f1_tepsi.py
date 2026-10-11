@@ -1,4 +1,4 @@
-"""Fusion lab 1: G1 çay tepsisi — parametrik taban + dört bardak yuvası (ÖRNEK ölçüler).
+"""Fusion lab 1: insansı robotun çay tepsisi — parametrik taban + dört bardak yuvası (ÖRNEK ölçüler).
 Kullanıcı parametreleri: bardak_cap, yuva_derinlik, aralik, kalinlik, kenar. Fusion MCP ile çalıştırılır (fusion_mcp_execute/script)."""
 import adsk.core, adsk.fusion, json
 
