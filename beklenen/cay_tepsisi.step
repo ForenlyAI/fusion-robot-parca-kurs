@@ -9,7 +9,7 @@ FILE_DESCRIPTION(
 /* implementation_level */ '2;1');
 
 FILE_NAME(
-/* name */ 'g1_cay_tepsisi.step',
+/* name */ 'cay_tepsisi.step',
 /* time_stamp */ '2026-10-11T11:32:18Z',
 /* author */ (''),
 /* organization */ (''),

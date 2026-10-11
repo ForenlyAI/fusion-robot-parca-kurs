@@ -1,10 +1,10 @@
 """Fusion lab 2: tepsiyi alttan boşalt (Shell), kütle ve ağırlık merkezini ölç, robot yük bütçesiyle karşılaştır.
-Önce f1_tepsi.py koşulmuş olmalı (aktif tasarım). Yük bütçesi ÖRNEK: G1 temel kol yükü ~2 kg (Unitree, duruşa göre değişir)."""
+Önce f1_tepsi.py koşulmuş olmalı (aktif tasarım). Yük bütçesi ÖRNEK: kol taşıma sınırı 2 kg (üretici veri sayfasından alınır, kol duruşuna göre değişir)."""
 import adsk.core, adsk.fusion, json
 
 PLA = 1.24          # g/cm³ (PLA, üretici veri sayfalarındaki tipik değer)
 BARDAK_G = 230      # ÖRNEK: ince belli çay bardağı + tabak + çay
-KOL_SINIR_G = 2000  # G1 temel model kol yükü ~2 kg
+KOL_SINIR_G = 2000  # ÖRNEK: kol taşıma sınırı (üretici veri sayfası, doğrulanmalı)
 
 
 def olc(govde):
