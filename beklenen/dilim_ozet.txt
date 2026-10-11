@@ -1,0 +1,7 @@
+; filament used [mm] = 47703.76
+; filament used [g] = 142.28
+; estimated printing time (normal mode) = 13h 19m 47s
+; fill_density = 15%
+; fill_pattern = gyroid
+; layer_height = 0.2
+; perimeters = 2
