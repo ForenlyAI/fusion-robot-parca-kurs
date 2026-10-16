@@ -1,4 +1,4 @@
-# Fusion ile Robot Parçası: Parametrik Tasarımdan Baskıya · öğrenci deposu
+# Fusion ile Robot Parçası · öğrenci deposu
 
 Forenly AI Academy kursunun çalışma deposu. Yürüyen örnek: kafede çay taşıyan **insansı robotun dört bardaklık tepsisi**. Forenly AI'nin foi sistemi insansı robotu bir işletmede kendi başına çalıştırır; robotun eline verilen her parça **robotun yük bütçesine** sığmalıdır. Bu kursta parçayı Fusion'da parametrik tasarlar, robot için hafifletir, baskıya hazırlar ve sonucu doğrularsınız.
 
